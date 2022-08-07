@@ -23,40 +23,23 @@
     <title>Galaxy Holding</title>
 </head>
 <body>
-    <div class="wrapper-bg">
-        <header>
-            <div class="container">
-                <div class="main-header">
-                    <div class="row">
-                        <div class="col-lg-12 grid-header">
-                            <a href="index.php">
-                                <img class="logo" src="./images/frame18.svg">
-                            </a>
-                            <div class="main-nav">
-                                <ul class="menu-desktop">
-                                    <li><a href="index.php">Giới thiệu</a></li>
-                                    <li class="active sub">
-                                        <a href="service.php">
-                                            Dịch vụ
-                                        </a>
-                                        <ul class="sub-menu">
-                                            <div class="m-title">Dịch vụ</div>
-                                            <?php for($i=0;$i<11;$i++){ ?>
-                                                <li>
-                                                    <a href="">
-                                                        <span>Dịch vụ <?=$i?></span>
-                                                        <p>Tư vấn Chuyển đổi số và xây dựng lộ trình phát triển CNTT</p>
-                                                    </a>
-                                                </li>
-                                            <?php } ?>
-                                        </ul>
-                                    </li>
-                                    <li><a href="casestudy.php">Case studies</a></li>
-                                    <li><a href="contact.php">Liên hệ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <div class="wrapper">
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="">
+                        <img src="./images/frame18.svg">
+                    </a>
                 </div>
-            </div>
-        </header>
+                <div class="menu">
+                    <ul class="list">
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Dịch vụ</a></li>
+                        <li><a href="">Case study</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
