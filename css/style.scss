@@ -236,10 +236,12 @@ a{
             font-weight: 300;
             font-family: 'Mitr';
             align-items: center;
+            color: #FDB913;
             p{
                 font-size: 16px;
                 font-family: 'Lexend';
                 font-style: normal;
+                color: #F1F1F1;
             }
             .icon{
                 width: 75px;
@@ -278,6 +280,29 @@ a{
             right: 5%;
             width: 150px;
             height: 150px;
+        }
+        .bg-number{
+            position: relative;
+            text-align: center;
+            margin-top: 75pt;
+            .bg{
+                width: 70%;
+            }
+            .phone{
+                position: absolute;
+                top: -2%;
+                left: -5%;
+                height: 100%;
+                transform: scale(1.25);
+            }
+        }
+        .vector-01{
+            position: absolute;
+            top: 80%;
+            img{
+                width: 800px;
+                max-height: 100%;
+            }
         }
     }
 
@@ -333,7 +358,7 @@ a{
             text-align: center;
             a{
                 color: #fff;
-                padding: 16px;
+                padding: 10px 16px;
                 background: linear-gradient(0deg, #C8CBF7, #C8CBF7);
                 border-radius: 0px 24px 24px 24px;
                 margin: 0px 5px;

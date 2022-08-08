@@ -102,7 +102,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="./images/numbers.svg">
+                    <div class="bg-number">
+                        <img class="bg" src="./images/bg-phone.svg">
+                        <img class="phone" src="./images/numbers.svg">
+                    </div>
                 </div>
                 <div class="col-lg-3">
                     <p class="text-border">2018 - 2022</p>
@@ -112,15 +115,22 @@
                 </div>
             </div>
         </div>
+        <div class="vector-01"><img src="./images/vector-01.svg"></div>
     </div>
     <div class="clearfix"></div>
     <div class="news">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-center">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
+                    <div class="text-left">
                         <h3 class="main-title">Galaxy digital holdings</h3>
                         <p class="main-desc">Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
+                    </div>
+                    <div class="pagination">
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -138,11 +148,6 @@
                                     </div>
                                 </div>
                             <?php } ?>
-                        </div>
-                        <div class="pagination">
-                            <a href="#">1</a>
-                            <a href="#" class="active">2</a>
-                            <a href="#">3</a>
                         </div>
                     </div>
                 </div>

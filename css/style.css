@@ -237,11 +237,13 @@ a:hover {
   font-weight: 300;
   font-family: "Mitr";
   align-items: center;
+  color: #FDB913;
 }
 .page-home .numbers .item p {
   font-size: 16px;
   font-family: "Lexend";
   font-style: normal;
+  color: #F1F1F1;
 }
 .page-home .numbers .item .icon {
   width: 75px;
@@ -279,6 +281,29 @@ a:hover {
   right: 5%;
   width: 150px;
   height: 150px;
+}
+.page-home .numbers .bg-number {
+  position: relative;
+  text-align: center;
+  margin-top: 75pt;
+}
+.page-home .numbers .bg-number .bg {
+  width: 70%;
+}
+.page-home .numbers .bg-number .phone {
+  position: absolute;
+  top: -2%;
+  left: -5%;
+  height: 100%;
+  transform: scale(1.25);
+}
+.page-home .numbers .vector-01 {
+  position: absolute;
+  top: 80%;
+}
+.page-home .numbers .vector-01 img {
+  width: 800px;
+  max-height: 100%;
 }
 .page-home .news {
   margin: 50pt 0pt;
@@ -334,7 +359,7 @@ a:hover {
 }
 .page-home .news .pagination a {
   color: #fff;
-  padding: 16px;
+  padding: 10px 16px;
   background: linear-gradient(0deg, #C8CBF7, #C8CBF7);
   border-radius: 0px 24px 24px 24px;
   margin: 0px 5px;
