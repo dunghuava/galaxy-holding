@@ -15,6 +15,10 @@ body .wrapper.contact {
   background: url(../images/bg-contact.png) no-repeat;
   background-size: 100%;
 }
+body .wrapper.casestudy {
+  background: url(../images/bg-project.png) no-repeat;
+  background-size: 100%;
+}
 
 img {
   max-width: 100%;
@@ -592,6 +596,67 @@ a:hover {
   left: 0px;
 }
 
+.page-casestudy {
+  position: relative;
+}
+.page-casestudy::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 5%;
+  background: url(../images/gr-case-man.svg) no-repeat;
+  width: 450px;
+  height: 450px;
+  background-size: 100% 100%;
+}
+.page-casestudy::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: url(../images/gr-top-right.svg) no-repeat;
+  width: 350px;
+  height: 350px;
+  background-size: 100% 100%;
+}
+.page-casestudy .box {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 25pt 0px;
+}
+.page-casestudy .box .content {
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+}
+.page-casestudy .box .content .name {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #F16682;
+}
+.page-casestudy .box .content .text {
+  font-family: "Lexend";
+  font-size: 16px;
+  font-weight: 400;
+}
+.page-casestudy .botman {
+  position: relative;
+}
+.page-casestudy .botman::after {
+  content: "";
+  background: url(../images/bottom-man.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  bottom: -5%;
+  right: 0px;
+  z-index: 5;
+}
+
 .footer {
   color: #5D62A8;
   background: url(../images/bg-footer.svg) no-repeat;
@@ -599,6 +664,7 @@ a:hover {
   padding-top: 35pt;
   margin-top: 25pt;
   font-size: 16px;
+  z-index: 10;
 }
 .footer .copyright {
   color: #fff;

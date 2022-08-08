@@ -13,6 +13,10 @@ body{
             background: url(../images/bg-contact.png) no-repeat;
             background-size: 100%; 
         }
+        &.casestudy{
+            background: url(../images/bg-project.png) no-repeat;
+            background-size: 100%; 
+        }
     }
 }
 img{
@@ -597,6 +601,67 @@ a{
     }
 }
 
+.page-casestudy{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 5%;
+        background: url(../images/gr-case-man.svg) no-repeat;
+        width: 450px;
+        height: 450px;
+        background-size: 100% 100%;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background: url(../images/gr-top-right.svg) no-repeat;
+        width: 350px;
+        height: 350px;
+        background-size: 100% 100%;
+    }
+    .box{
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 25pt 0px;
+        .content{
+            padding: 15px;
+            color: #000;
+            text-transform: uppercase;
+            .name{
+                font-family: 'Lexend';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                color: #F16682;
+            }
+            .text{
+                font-family: 'Lexend';
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    .botman{
+        position: relative;
+        &::after{
+            content: '';
+            background: url(../images/bottom-man.svg) no-repeat;
+            background-size: 100% 100%;
+            width: 400px;
+            height: 450px;
+            position: absolute;
+            bottom: -5%;
+            right: 0px;
+            z-index: 5;
+        }
+    }
+}
+
 .footer{
     color: #5D62A8;
     background: url(../images/bg-footer.svg) no-repeat;
@@ -604,6 +669,7 @@ a{
     padding-top: 35pt;
     margin-top: 25pt;
     font-size: 16px;
+    z-index: 10;
     .copyright{
         color: #fff;
         text-align: center;

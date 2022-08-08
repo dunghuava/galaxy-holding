@@ -1,11 +1,9 @@
 <?php include ('header.php') ?>
 <div class="page page-contact">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h3 class="main-title"><span class="bold">Liên hệ</span></h3>
-                <p class="main-desc">Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
-            </div>
+        <div class="text-center">
+            <h3 class="main-title"><span class="bold">Liên hệ</span></h3>
+            <p class="main-desc">Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
         </div>
         <div class="text-center">
             <p>Galaxy luôn sẵn sàng hỗ trợ bạn</p>
