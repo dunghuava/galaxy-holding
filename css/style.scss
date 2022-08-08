@@ -1,9 +1,18 @@
 body{
+    color: #fff;
     background: #5D62A8;
     overflow-x: hidden;
     .wrapper{
         background: url(../images/bg.png) no-repeat;
         background-size: 100% 100%;
+        &.service{
+            background: url(../images/bg-service.png) no-repeat;
+            background-size: 100%; 
+        }
+        &.contact{
+            background: url(../images/bg-contact.png) no-repeat;
+            background-size: 100%; 
+        }
     }
 }
 img{
@@ -57,10 +66,21 @@ a{
                         text-transform: uppercase;
                         font-family: 'Mitr';
                         font-size: 16px;
+                        position: relative;
+                        transition: all 0.2s;
                     }
                     &:hover{
                         a{
                             color: #FDB913;
+                            &::before{
+                                content: '';
+                                background: url(../images/active.svg) no-repeat;
+                                width: 25px;
+                                height: 25px;
+                                position: absolute;
+                                top: 2px;
+                                left: -25px;
+                            }
                         }
                     }
                 }
@@ -103,10 +123,10 @@ a{
     }
 }
 /* css for homepage */
+.page{
+    padding-top: 120pt;
+}
 .page-home{
-    padding-top: 100pt;
-    color: #fff;
-
     .introduce{
         margin: 170pt 0pt;
         .container{
@@ -416,6 +436,165 @@ a{
             margin: auto;
         }
     }
+    .social{
+        float: right;
+    }
+}
+
+.page-contact{
+    background: url(../images/gr-contact-01.svg) no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    position: relative;
+    &::after{
+        content: '';
+        background: url(../images/gr-contact-bot.svg) no-repeat;
+        background-size: 100% 100%;
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    &::before{
+        content: '';
+        background: url(../images/gr-contact-top.svg) no-repeat;
+        background-size: 100% 100%;
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .box{
+        border-radius: 20px;
+        display: grid;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+        height: 200px;
+        margin: 25px 0px;
+        &.locate{
+            background: #F16682;
+        }
+        &.phone{
+            background: #9ACA3C;
+        }
+        &.mail{
+            background: #FDB913;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.page-service{
+    background: url(../images/gr-service-center.svg) center center no-repeat;
+    background-size: auto;
+    position: relative;
+    &::after{
+        content: '';
+        background: url(../images/gr-service-top-right.svg) no-repeat;
+        background-size: 100% 100%;
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    &::before{
+        content: '';
+        background: url(../images/gr-service-top-left.svg) no-repeat;
+        background-size: 100% 100%;
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 5%;
+        left: -2%;
+    }
+    .gr-moon{
+        position: absolute;
+        top: 7%;
+        left: 0px;
+    }
+    .box{
+        margin: 25px 0px;
+        .name{
+            text-transform: uppercase;
+            margin: 45px 0px;
+            width: 100%;
+            text-align: right;
+            position: relative;
+            font-size: 28px;
+            &::before{
+                content: '';
+                background: url(../images/title-service.svg) no-repeat;
+                background-size: 100%;
+                width: 80px;
+                height: 80px;
+                left: 0px;
+                top: -20px;
+                position: absolute;
+            }
+        }
+        .content{
+            padding: 40px 32px;
+            border-radius: 24px;
+            background-color: #5d62a8;
+            box-shadow: 0 3.631784200668335px 39.68px rgb(255 255 255 / 46%), 32px 32.08081817626953px 70px rgb(0 0 0 / 28%), -1.069360613822937px 1.069360613822937px 2.14px rgb(255 255 255 / 25%) inset, 2.138721227645874px -2.138721227645874px 4.28px;
+            .list{
+                padding-left: 0px;
+                .title{
+                    color: #FDB913;
+                    font-size: 24px;
+                }
+                li{
+                    position: relative;
+                    list-style: none;
+                    color: #F1F1F1;
+                    font-size: 16px;
+                    padding-left: 50px;
+                    .head{
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 0px;
+                        color: #fff;
+                    }
+                    &.checked{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            background: #fff url(../images/checked.svg) center center no-repeat;
+                            background-size: 75%;
+                            width: 42px;
+                            height: 42px;
+                            left: 0px;
+                            top: 10px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .galaxy{
+        background: url(../images/bg-service-galaxy.svg) no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        position: relative;
+        &::after{
+            content: '';
+            background: url(../images/gr-moon-left.svg) no-repeat;
+            background-size: 100% 100%;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
 }
 
 .footer{
@@ -423,6 +602,8 @@ a{
     background: url(../images/bg-footer.svg) no-repeat;
     background-size: 100%;
     padding-top: 35pt;
+    margin-top: 25pt;
+    font-size: 16px;
     .copyright{
         color: #fff;
         text-align: center;

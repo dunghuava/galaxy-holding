@@ -1,10 +1,19 @@
 body {
+  color: #fff;
   background: #5D62A8;
   overflow-x: hidden;
 }
 body .wrapper {
   background: url(../images/bg.png) no-repeat;
   background-size: 100% 100%;
+}
+body .wrapper.service {
+  background: url(../images/bg-service.png) no-repeat;
+  background-size: 100%;
+}
+body .wrapper.contact {
+  background: url(../images/bg-contact.png) no-repeat;
+  background-size: 100%;
 }
 
 img {
@@ -63,9 +72,20 @@ a:hover {
   text-transform: uppercase;
   font-family: "Mitr";
   font-size: 16px;
+  position: relative;
+  transition: all 0.2s;
 }
 .main-header .main-nav .menu .list li:hover a {
   color: #FDB913;
+}
+.main-header .main-nav .menu .list li:hover a::before {
+  content: "";
+  background: url(../images/active.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 2px;
+  left: -25px;
 }
 
 .main-title {
@@ -105,10 +125,10 @@ a:hover {
 }
 
 /* css for homepage */
-.page-home {
-  padding-top: 100pt;
-  color: #fff;
+.page {
+  padding-top: 120pt;
 }
+
 .page-home .introduce {
   margin: 170pt 0pt;
 }
@@ -414,12 +434,171 @@ a:hover {
   width: 80%;
   margin: auto;
 }
+.form-contact .social {
+  float: right;
+}
+
+.page-contact {
+  background: url(../images/gr-contact-01.svg) no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  position: relative;
+}
+.page-contact::after {
+  content: "";
+  background: url(../images/gr-contact-bot.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.page-contact::before {
+  content: "";
+  background: url(../images/gr-contact-top.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.page-contact .box {
+  border-radius: 20px;
+  display: grid;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  padding: 25px;
+  height: 200px;
+  margin: 25px 0px;
+}
+.page-contact .box.locate {
+  background: #F16682;
+}
+.page-contact .box.phone {
+  background: #9ACA3C;
+}
+.page-contact .box.mail {
+  background: #FDB913;
+}
+.page-contact .box p {
+  margin-bottom: 0px;
+}
+
+.page-service {
+  background: url(../images/gr-service-center.svg) center center no-repeat;
+  background-size: auto;
+  position: relative;
+}
+.page-service::after {
+  content: "";
+  background: url(../images/gr-service-top-right.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.page-service::before {
+  content: "";
+  background: url(../images/gr-service-top-left.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 5%;
+  left: -2%;
+}
+.page-service .gr-moon {
+  position: absolute;
+  top: 7%;
+  left: 0px;
+}
+.page-service .box {
+  margin: 25px 0px;
+}
+.page-service .box .name {
+  text-transform: uppercase;
+  margin: 45px 0px;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  font-size: 28px;
+}
+.page-service .box .name::before {
+  content: "";
+  background: url(../images/title-service.svg) no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+  left: 0px;
+  top: -20px;
+  position: absolute;
+}
+.page-service .box .content {
+  padding: 40px 32px;
+  border-radius: 24px;
+  background-color: #5d62a8;
+  box-shadow: 0 3.6317842007px 39.68px rgba(255, 255, 255, 0.46), 32px 32.0808181763px 70px rgba(0, 0, 0, 0.28), -1.0693606138px 1.0693606138px 2.14px rgba(255, 255, 255, 0.25) inset, 2.1387212276px -2.1387212276px 4.28px;
+}
+.page-service .box .content .list {
+  padding-left: 0px;
+}
+.page-service .box .content .list .title {
+  color: #FDB913;
+  font-size: 24px;
+}
+.page-service .box .content .list li {
+  position: relative;
+  list-style: none;
+  color: #F1F1F1;
+  font-size: 16px;
+  padding-left: 50px;
+}
+.page-service .box .content .list li .head {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: #fff;
+}
+.page-service .box .content .list li.checked::before {
+  content: "";
+  position: absolute;
+  background: #fff url(../images/checked.svg) center center no-repeat;
+  background-size: 75%;
+  width: 42px;
+  height: 42px;
+  left: 0px;
+  top: 10px;
+  border-radius: 10px;
+}
+.page-service .galaxy {
+  background: url(../images/bg-service-galaxy.svg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  position: relative;
+}
+.page-service .galaxy::after {
+  content: "";
+  background: url(../images/gr-moon-left.svg) no-repeat;
+  background-size: 100% 100%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
 
 .footer {
   color: #5D62A8;
   background: url(../images/bg-footer.svg) no-repeat;
   background-size: 100%;
   padding-top: 35pt;
+  margin-top: 25pt;
+  font-size: 16px;
 }
 .footer .copyright {
   color: #fff;

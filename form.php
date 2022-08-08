@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <button class="btn btn-block">Đăng ký ngay</button>
+                <button class="btn btn-block">Liên hệ ngay</button>
             </div>
         </div>
         <div class="col-lg-7">
@@ -39,6 +39,11 @@
             </div>
             <div class="text">
                 <span>2022</span>
+                <div class="social">
+                    <a href="#"><img src="./images/social-fb-2.svg"></a>
+                    <a href="#"><img src="./images/social-tw.svg"></a>
+                    <a href="#"><img src="./images/social-youtube.svg"></a>
+                </div>
             </div>
         </div>
     </div>

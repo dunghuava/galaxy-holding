@@ -1,5 +1,5 @@
 <?php include ('header.php') ?>
-<div class="page-home">
+<div class="page page-home">
     <div class="introduce">
         <div class="container">
             <div class="row">

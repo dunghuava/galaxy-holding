@@ -28,16 +28,16 @@
         <div class="container">
             <nav class="main-nav">
                 <div class="logo">
-                    <a href="">
+                    <a href="index.php">
                         <img src="./images/frame18.svg">
                     </a>
                 </div>
                 <div class="menu">
                     <ul class="list">
-                        <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Dịch vụ</a></li>
-                        <li><a href="">Case study</a></li>
-                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="about.php">Giới thiệu</a></li>
+                        <li><a href="service.php">Dịch vụ</a></li>
+                        <li><a href="casestudy.php">Case study</a></li>
+                        <li><a href="contact.php">Liên hệ</a></li>
                     </ul>
                 </div>
             </nav>
