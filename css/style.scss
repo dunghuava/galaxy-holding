@@ -384,6 +384,43 @@ a{
                 right: -20%;
             }
         }
+        .owl-slider{
+            margin: 75px 0px;
+            position: relative;
+            .slide{
+                text-align: center;
+                background: #fff;
+                border-radius: 30px;
+                display: grid;
+                align-items: center;
+                img{
+                    max-width: 70%;
+                    margin: auto;
+                }
+                height: 161px;
+            }
+        }
+        .owl-carousel .owl-nav{
+            &.disabled{
+                display: block;
+            }
+            [class*="owl-"]{
+                font-size: 55px;
+                color: #C8CBF7;
+                top: 20%;
+                position: absolute;
+                span{
+                    outline: none !important;
+                    background: none !important;
+                }
+            }
+            .owl-prev{
+                left: -5%;
+            }
+            .owl-next{
+                right: -5%;
+            }
+        }
     }
 }
 
@@ -467,6 +504,12 @@ a{
     }
     .social{
         float: right;
+    }
+    .line{
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        transform: translate(-50%, -50%);
     }
 }
 

@@ -32,13 +32,14 @@
             <div class="form-group">
                 <button class="btn btn-block">Liên hệ ngay</button>
             </div>
+            <div class="line"><img src="./images/form-line.svg"></div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 pl-2">
             <div class="banner">
                 <img src="./images/NV3-2 1.svg">
             </div>
-            <div class="text">
-                <span>2022</span>
+            <div class="text pl-2">
+                <b>2022</b>
                 <div class="social">
                     <a href="#"><img src="./images/social-fb-2.svg"></a>
                     <a href="#"><img src="./images/social-tw.svg"></a>

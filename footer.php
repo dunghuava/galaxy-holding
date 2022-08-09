@@ -28,29 +28,3 @@
         </div>
     </body>
 </html>
-
-<script>
-    $(document).ready(function() {
-        $('.box').click(function(e){
-            $('.box').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $('.owl-carousel').owlCarousel({
-            nav:true,
-            loop:true,
-            margin:15,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });
-    });
-</script>

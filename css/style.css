@@ -383,6 +383,41 @@ a:hover {
   top: 0%;
   right: -20%;
 }
+.page-home .galaxys .owl-slider {
+  margin: 75px 0px;
+  position: relative;
+}
+.page-home .galaxys .owl-slider .slide {
+  text-align: center;
+  background: #fff;
+  border-radius: 30px;
+  display: grid;
+  align-items: center;
+  height: 161px;
+}
+.page-home .galaxys .owl-slider .slide img {
+  max-width: 70%;
+  margin: auto;
+}
+.page-home .galaxys .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.page-home .galaxys .owl-carousel .owl-nav [class*=owl-] {
+  font-size: 55px;
+  color: #C8CBF7;
+  top: 20%;
+  position: absolute;
+}
+.page-home .galaxys .owl-carousel .owl-nav [class*=owl-] span {
+  outline: none !important;
+  background: none !important;
+}
+.page-home .galaxys .owl-carousel .owl-nav .owl-prev {
+  left: -5%;
+}
+.page-home .galaxys .owl-carousel .owl-nav .owl-next {
+  right: -5%;
+}
 
 .form-contact {
   color: #5D62A8;
@@ -465,6 +500,12 @@ a:hover {
 }
 .form-contact .social {
   float: right;
+}
+.form-contact .line {
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translate(-50%, -50%);
 }
 
 .page-contact {

@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" />
     <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owl-carosel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carosel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css?v=<?=filemtime('css/style.css')?>">
     <link rel="stylesheet" href="css/responsive.css?v=<?=filemtime('css/responsive.css')?>">
     <!-- javascript -->
-    <script src="assets/vendors/jquery.min.js"></script>
-    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <script src="owl-carosel/jquery.min.js"></script>
+    <script src="owl-carosel/owl.carousel.min.js"></script>
     <title>Galaxy Holding</title>
 </head>
 <body>

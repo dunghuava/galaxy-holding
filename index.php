@@ -160,7 +160,26 @@
             <div class="text-center">
                 <h3 class="main-title">Galaxy Digital Holdings<br>Digitech of Sovico Group</h3>
                 <p class="main-desc">Sovico Group là tập đoàn đầu tư hàng đầu tại Việt Nam, hoạt động với mục tiêu cung cấp các sản phẩm và dịch vụ chất lượng quốc tế trong lĩnh vực tài chính ngân hàng, hàng không, chuyển đổi số, năng lượng, đô thị, nghỉ dưỡng …nhằm đáp ứng nhu cầu của khách hàng và hội nhập kinh tế toàn cầu.</p>
-            </div> 
+            </div>
+            <div class="owl-slider owl-carousel owl-theme">
+                <div class="slide">
+                    <img src="./images/sl-movi.svg">
+                </div>
+                <div class="slide">
+                    <img src="./images/sl-hdbank.svg">
+                </div>
+                <div class="slide">
+                    <img src="./images/sl-vietjet.svg">
+                </div>
+                <div class="slide">
+                    <img src="./images/sl-hdsaigon.svg">
+                </div>
+                <div class="slide">
+                    <img src="./images/sl-tp.svg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="group">
                 <?php include 'form.php' ?>
             </div>
@@ -168,4 +187,30 @@
     </div>
 </div>
 
+
+<script>
+    $(document).ready(function() {
+        $('.box').click(function(e){
+            $('.box').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('.owl-slider').owlCarousel({
+            nav:true,
+            loop:true,
+            margin:15,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+    });
+</script>
 <?php include 'footer.php' ?>
