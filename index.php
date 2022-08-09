@@ -24,6 +24,36 @@
             <div class="group">
                 <img src="./images/img-ecosystem.svg">
                 <img class="g-center" src="./images/group18.svg">
+                <div class="box cl1">
+                    <div class="content yl">
+                        <span>Y tế</span>
+                    </div>
+                </div>
+                <div class="box cl2">
+                    <div class="content">
+                        <span>Kinh doanh số</span>
+                    </div>
+                </div>
+                <div class="box cl3">
+                    <div class="content yl">
+                        <span>Tài chính</span>
+                    </div>
+                </div>
+                <div class="box cl4">
+                    <div class="content">
+                        <span>Hàng không vận tải</span>
+                    </div>
+                </div>
+                <div class="box cl5">
+                    <div class="content yl">
+                        <span>Năng lượng</span>
+                    </div>
+                </div>
+                <div class="box cl6">
+                    <div class="content">
+                        <span>Bất động sản nghỉ dưỡng</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

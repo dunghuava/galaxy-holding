@@ -160,12 +160,107 @@ a{
                 left: 50%;
                 transform: translate(-50%,-95%);
             }
+            .box{
+                position: absolute;
+                background: #fff;
+                box-shadow: 0px 0px 23.15px rgba(0, 0, 0, 0.25), -23.6517px 34.65px 51.65px rgba(0, 0, 0, 0.25), inset -0.78839px 0.78839px 1.57678px rgba(255, 255, 255, 0.25), inset 5.58px -1.57678px 7.15px rgba(0, 0, 0, 0.25);
+                border-radius: 30px;
+                padding: 10px;
+                min-width: 148px;
+                min-height: 110px;
+                color: #fff;
+                &::before{
+                    content: '';
+                    background: url(../images/dots.svg) no-repeat;
+                    width: 80px;
+                    height: 10px;
+                    background-size: 100% 100%;
+                    display: block;
+                    margin-bottom: 10px;
+                    margin-left: -10px;
+                }
+                .content{
+                    background: #5D62A8;
+                    border-radius: 30px;
+                    padding: 25px 10px;
+                    font-family: 'Mitr';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    position: relative;
+                    text-align: left;
+                    &::before{
+                        content: '';
+                        background: #fff url(../images/bf-02.svg) center center no-repeat;
+                        width: 35px;
+                        height: 35px;
+                        background-size: 90%;
+                        display: block;
+                        border-radius: 10px;
+                        margin-bottom: 5px;
+                    }
+                    &.yl{
+                        background: #FDB913;
+                        &::before{
+                            content: '';
+                            background: #fff url(../images/bf-01.svg) center center no-repeat;
+                            background-size: 90%;
+                        }
+                    }
+                }
+                &.cl1{
+                    top: 0px;
+                    left: 50%;
+                }
+                &.cl2{
+                    top: 25%;
+                    right: 15%;
+                }
+                &.cl3{
+                    top: 55%;
+                    right: 25%;
+                }
+                &.cl4{
+                    bottom: 0px;
+                    left: 50%;
+                }
+                &.cl5{
+                    top: 55%;
+                    left: 25%;
+                }
+                &.cl6{
+                    top: 25%;
+                    left: 15%;
+                }
+            }
         }
     }
     .services{
         margin: 50pt 0pt;
         .group{
-            background: url(../images/bg-service-1.svg) no-repeat;
+            .container{
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: -10%;
+                    background: url(../images/bg-service-1.svg) no-repeat;
+                    background-size: 100% 100%;
+                    width: 50px;
+                    height: 50px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    right: -15%;
+                    background: url(../images/ufo.svg) no-repeat;
+                    background-size: 100% 100%;
+                    width: 140px;
+                    height: 140px;
+                }
+            }
             [class*="col-"]{
                 align-self: flex-end;
             }
@@ -371,6 +466,29 @@ a{
 
     .galaxys{
         margin: 50pt 0pt;
+        .container{
+            position: relative;
+            &::after{
+                content: '';
+                background: url(../images/gr-form-1.svg) no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                top: 0px;
+                left: 0px;
+            }
+            &::before{
+                content: '';
+                background: url(../images/moon.svg) no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                top: 5%;
+                right: 0px;
+            }
+        }
         .group{
             position: relative;
             &::after{
