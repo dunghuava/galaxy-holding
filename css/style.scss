@@ -111,13 +111,14 @@ a{
                             margin: 10px auto;
                             padding-bottom: 15px;
                             border-bottom: 1px dashed #4D5DA2;
-                            width: 98%;
+                            width: 97%;
                         }
                         li{
-                            width: 33%;
+                            width: calc(100% / 3);
                             float: left;
                             text-align: left;
-                            padding: 10px;
+                            padding: 10px 10px 10px 40px;
+                            position: relative;
                             cursor: pointer;
                             a{
                                 color: #4D5DA2;
@@ -137,6 +138,17 @@ a{
                                 *{
                                     color: #fff;
                                 }
+                            }
+                            &::before{
+                                content: '';
+                                background: #fff url(../images/ic-sub.svg) center center no-repeat;
+                                background-size: 70%;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 5px;
+                                top: 15px;
                             }
                         }
                     }
@@ -163,6 +175,7 @@ a{
                                 position: absolute;
                                 top: 2px;
                                 left: -25px;
+                                animation: menu_is_active 0.2s;
                             }
                             &.child{
                                 &::after{
@@ -177,6 +190,12 @@ a{
                 }
             }
         }
+    }
+}
+
+@keyframes menu_is_active{
+    from{
+        transform: scale(0.5);
     }
 }
 

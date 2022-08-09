@@ -116,13 +116,14 @@ a:hover {
   margin: 10px auto;
   padding-bottom: 15px;
   border-bottom: 1px dashed #4D5DA2;
-  width: 98%;
+  width: 97%;
 }
 .main-header .main-nav .menu .list li .sub li {
-  width: 33%;
+  width: 33.3333333333%;
   float: left;
   text-align: left;
-  padding: 10px;
+  padding: 10px 10px 10px 40px;
+  position: relative;
   cursor: pointer;
 }
 .main-header .main-nav .menu .list li .sub li a {
@@ -143,6 +144,17 @@ a:hover {
 }
 .main-header .main-nav .menu .list li .sub li:hover * {
   color: #fff;
+}
+.main-header .main-nav .menu .list li .sub li::before {
+  content: "";
+  background: #fff url(../images/ic-sub.svg) center center no-repeat;
+  background-size: 70%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 15px;
 }
 .main-header .main-nav .menu .list li::after {
   content: "";
@@ -167,6 +179,8 @@ a:hover {
   position: absolute;
   top: 2px;
   left: -25px;
+  -webkit-animation: menu_is_active 0.2s;
+          animation: menu_is_active 0.2s;
 }
 .main-header .main-nav .menu .list li:hover a.child::after {
   display: block;
@@ -175,6 +189,17 @@ a:hover {
   display: block;
 }
 
+@-webkit-keyframes menu_is_active {
+  from {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes menu_is_active {
+  from {
+    transform: scale(0.5);
+  }
+}
 .main-title {
   font-family: "Mitr";
   font-style: normal;
