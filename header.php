@@ -35,8 +35,30 @@
                 <div class="menu">
                     <ul class="list">
                         <li><a href="about.php">Giới thiệu</a></li>
-                        <li><a href="service.php">Dịch vụ</a></li>
-                        <li><a href="casestudy.php">Case study</a></li>
+                        <li>
+                            <a class="child" href="service.php">Dịch vụ</a>
+                            <ul class="sub">
+                                <p class="name">Dịch vụ</p>
+                                <?php for($i=0;$i<12;$i++){ ?>
+                                    <li>
+                                        <a href="">Dịch vụ <?=$i?></a>
+                                        <p>Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="child" href="casestudy.php">Case study</a>
+                            <ul class="sub">
+                                <p class="name">Case study</p>
+                                <?php for($i=0;$i<8;$i++){ ?>
+                                    <li>
+                                        <a href="">Case study <?=$i?></a>
+                                        <p>Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </li>
                         <li><a href="contact.php">Liên hệ</a></li>
                     </ul>
                 </div>

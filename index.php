@@ -166,18 +166,36 @@
                 <div class="col-lg-6">
                     <div class="list">
                         <div class="row">
-                            <?php for ($i=0;$i<3;$i++){ ?>
-                                <div class="col-lg-4">
-                                    <div class="item">
-                                        <p class="name">Galaxy Digital Holding</p>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and</p>
-                                        <p>
-                                            <img src="./images/05_pph.png">
-                                        </p>
-                                        <a class="more" href="#">Xem chi tiết</a>
-                                    </div>
+                            <div class="col-lg-4">
+                                <div class="item">
+                                    <p class="name">Galaxy Digital Holding</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and</p>
+                                    <p>
+                                        <img src="./images/05_pph.png">
+                                    </p>
+                                    <a class="more" href="#">Xem chi tiết</a>
                                 </div>
-                            <?php } ?>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="item">
+                                    <p>
+                                        <img src="./images/05_pph.png">
+                                    </p>
+                                    <p class="name">Galaxy Digital Holding</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and</p>
+                                    <a class="more" href="#">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="item">
+                                    <p class="name">Galaxy Digital Holding</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and</p>
+                                    <p>
+                                        <img src="./images/05_pph.png">
+                                    </p>
+                                    <a class="more" href="#">Xem chi tiết</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
