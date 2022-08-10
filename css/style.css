@@ -571,10 +571,10 @@ a:hover {
 .page-home .galaxys {
   margin: 50pt 0pt;
 }
-.page-home .galaxys .container {
+.page-home .galaxys .container:nth-child(1) {
   position: relative;
 }
-.page-home .galaxys .container::after {
+.page-home .galaxys .container:nth-child(1)::after {
   content: "";
   background: url(../images/gr-form-1.svg) no-repeat;
   background-size: 100% 100%;
@@ -584,7 +584,7 @@ a:hover {
   top: 0px;
   left: 0px;
 }
-.page-home .galaxys .container::before {
+.page-home .galaxys .container:nth-child(1)::before {
   content: "";
   background: url(../images/moon.svg) no-repeat;
   background-size: 100% 100%;

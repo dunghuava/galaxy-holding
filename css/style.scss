@@ -572,7 +572,7 @@ a{
 
     .galaxys{
         margin: 50pt 0pt;
-        .container{
+        .container:nth-child(1){
             position: relative;
             &::after{
                 content: '';
