@@ -62,6 +62,9 @@
                         <li><a href="contact.php">Liên hệ</a></li>
                     </ul>
                 </div>
+                <button class="menubar" href="#">
+                    <img src="./images/icon-menu.svg">
+                </button>
             </nav>
         </div>
     </header>

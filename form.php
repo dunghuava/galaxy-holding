@@ -39,7 +39,7 @@
                 <img src="./images/NV3-2 1.svg">
             </div>
             <div class="text pl-2">
-                <b>2022</b>
+                <b><?=date('Y')?></b>
                 <div class="social">
                     <a href="#"><img src="./images/social-fb-2.svg"></a>
                     <a href="#"><img src="./images/social-tw.svg"></a>

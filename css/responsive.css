@@ -1,1 +1,37 @@
-/*# sourceMappingURL=responsive.css.map */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main-header .main-nav {
+    border-radius: 35px;
+  }
+  .main-header .main-nav .menu .list {
+    display: none;
+  }
+  .main-header .main-nav .menubar {
+    display: block;
+    float: right;
+    background: #5D62A8;
+    border: none;
+    color: #fff;
+    padding: 18px;
+    border-radius: 9px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .page-home .introduce {
+    margin: 20pt 0pt;
+  }
+  .page-home .introduce .group {
+    display: block;
+    width: 100%;
+    position: relative;
+    right: 0px;
+  }
+  .page-home .news .list {
+    right: 0px;
+  }
+  .page-contact .box {
+    padding: 5px;
+    font-size: 14px;
+    height: 155px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

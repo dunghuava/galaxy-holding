@@ -61,10 +61,10 @@
     <div class="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-6">
                     <img src="./images/group-service.svg">
                 </div>
-                <div class="col-lg-5 align-self-center">
+                <div class="col-lg-5 col-md-6 align-self-center">
                     <h3 class="main-title">Cung cấp các dịch vụ tiên tiến</h3>
                     <p class="main-desc">Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
                 </div>
@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="row">
                     <?php for ($i=0;$i<9;$i++){ ?>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-md-6">
                             <div class="box">
                                 <p class="name">Dịch vụ về công nghệ</p>
                                 <p class="desc">Mang lại giá trị cho khách hàng thông qua việc kết nối số các sản phẩm dịch vụ.</p>
@@ -166,7 +166,7 @@
                 <div class="col-lg-6">
                     <div class="list">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="item">
                                     <p class="name">Galaxy Digital Holding</p>
                                     <p>Lorem Ipsum is simply dummy text of the printing and</p>
@@ -176,7 +176,7 @@
                                     <a class="more" href="#">Xem chi tiết</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="item">
                                     <p>
                                         <img src="./images/05_pph.png">
@@ -186,7 +186,7 @@
                                     <a class="more" href="#">Xem chi tiết</a>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-4">
                                 <div class="item">
                                     <p class="name">Galaxy Digital Holding</p>
                                     <p>Lorem Ipsum is simply dummy text of the printing and</p>
@@ -209,23 +209,7 @@
                 <h3 class="main-title">Galaxy Digital Holdings<br>Digitech of Sovico Group</h3>
                 <p class="main-desc">Sovico Group là tập đoàn đầu tư hàng đầu tại Việt Nam, hoạt động với mục tiêu cung cấp các sản phẩm và dịch vụ chất lượng quốc tế trong lĩnh vực tài chính ngân hàng, hàng không, chuyển đổi số, năng lượng, đô thị, nghỉ dưỡng …nhằm đáp ứng nhu cầu của khách hàng và hội nhập kinh tế toàn cầu.</p>
             </div>
-            <div class="owl-slider owl-carousel owl-theme">
-                <div class="slide">
-                    <img src="./images/sl-movi.svg">
-                </div>
-                <div class="slide">
-                    <img src="./images/sl-hdbank.svg">
-                </div>
-                <div class="slide">
-                    <img src="./images/sl-vietjet.svg">
-                </div>
-                <div class="slide">
-                    <img src="./images/sl-hdsaigon.svg">
-                </div>
-                <div class="slide">
-                    <img src="./images/sl-tp.svg">
-                </div>
-            </div>
+            <?php include 'slide.php' ?>
         </div>
         <div class="container">
             <div class="group">
@@ -241,23 +225,6 @@
         $('.box').click(function(e){
             $('.box').removeClass('active');
             $(this).addClass('active');
-        });
-
-        $('.owl-slider').owlCarousel({
-            nav:true,
-            loop:true,
-            margin:15,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
         });
     });
 </script>
